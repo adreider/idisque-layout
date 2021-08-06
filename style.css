@@ -46,7 +46,7 @@ header {
 
 #food-savory {
   margin-top: -3rem;
-  border-bottom: 1px solid #e2e2e2;
+  border-bottom: 3px solid #adacac;
   margin-bottom: 100px;
 }
 
@@ -58,7 +58,7 @@ header {
 
 #food-beer {
   margin-top: -3rem;
-  border-bottom: 1px solid #e2e2e2;
+  border-bottom: 3px solid #adacac;
   margin-bottom: 100px;
 }
 
@@ -173,6 +173,7 @@ footer {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-weight: bold;
 }
 
 .topnav a:hover {
