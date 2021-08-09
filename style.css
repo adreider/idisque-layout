@@ -35,13 +35,13 @@ body {
 /* =============== Header ================= */
 header {
   background: var(--orange);
-  padding: 9rem 0 10rem;
+  padding: 9rem 0 5rem;
   text-align: center;
 }
 
-#logo {
-  color: var(--red);
-  font-weight: normal;
+.logo {
+  border-radius: 50%;
+  max-width: 200px;
 }
 
 #food-savory {
@@ -148,6 +148,17 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
+
+  header {
+    background: var(--orange);
+    padding: 15rem 0 10rem;
+    text-align: center;
+  }
+
+  .logo {
+    border-radius: 50%;
+    max-width: 400px;
+  }
   
 }
 
@@ -161,7 +172,7 @@ footer {
   top: 0;
   width: 100%;
   z-index: 9999999999999999;
-  padding: 24px;
+  padding: 0px;
   border-bottom: 1px solid #e2e2e2;
 }
 
