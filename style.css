@@ -35,7 +35,7 @@ body {
 /* =============== Header ================= */
 header {
   background: var(--orange);
-  padding: 9rem 0 5rem;
+  padding: 6rem 0 10rem;
   text-align: center;
 }
 
@@ -111,7 +111,7 @@ header {
 
 /* ======== Footer ======== */
 footer {
-  padding: 3rem 0 1rem;
+  padding: 1rem 0 1rem;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -119,6 +119,41 @@ footer {
   background-color: var(--orange);
   color: white;
   text-align: center;
+}
+
+.foot-car {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px;
+  font-size: 20px;
+}
+
+.size {
+  font-size: xx-large;
+}
+.circle {
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  color: #ff922d;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.car-number {
+  font-size: smaller;
+}
+
+.car{
+  font-size:45px;
+}
+
+.maker {
+  font-size: 45px;
+}
+
+.home {
+  font-size: 45px;
 }
 
 @media (min-width: 800px) {
@@ -178,6 +213,8 @@ footer {
     padding: 15rem 0 10rem;
     text-align: center;
   }
+  
+
 
   .logo {
     border-radius: 50%;
@@ -188,7 +225,7 @@ footer {
 
 /* ================== navbar =================== */
 .topnav {
-  display: flex;
+  display: inline-block;
   justify-content: center;
   overflow: hidden;
   background-color:var(--orange);
@@ -201,11 +238,10 @@ footer {
 }
 
 .topnav a {
-  float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 14px;
   text-decoration: none;
   font-size: 17px;
   font-weight: bold;
@@ -223,6 +259,23 @@ footer {
 .topnav .icon {
   display: none;
 }
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: larger;
+}
+
 
 /* @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
