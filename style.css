@@ -129,7 +129,7 @@ footer {
 }
 
 .size {
-  font-size: xx-large;
+  font-size: 35px;
 }
 .circle {
   height: 25px;
@@ -145,15 +145,15 @@ footer {
 }
 
 .car{
-  font-size:45px;
+  font-size:35px;
 }
 
 .maker {
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .home {
-  font-size: 45px;
+  font-size: 35px;
 }
 
 @media (min-width: 800px) {
