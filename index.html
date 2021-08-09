@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="modal.css">
 
   <title>Document</title>
 </head>
@@ -35,10 +36,9 @@
     </div>
   </nav>
 
-
   <main class="container">
-    <section id="food-savory">
-      <div id="savory">
+    <section class="food-savory">
+      <div class="savory">
         <div class="card make-it-slow make-it-fast">
           <div class="card-content">
             <div class="title">
@@ -95,8 +95,8 @@
         </div>
       </div>
     </section>
-    <section id="food-savory">
-      <div id="savory">
+    <section class="food-savory">
+      <div class="savory">
         <div class="card make-it-slow make-it-fast">
           <div class="card-content">
             <div class="title">
@@ -153,8 +153,8 @@
         </div>
       </div>
     </section>
-    <section id="food-savory">
-      <div id="savory">
+    <section class="food-savory">
+      <div class="savory">
         <div class="card make-it-slow make-it-fast">
           <div class="card-content">
             <div class="title">
@@ -211,8 +211,8 @@
         </div>
       </div>
     </section>
-    <section id="food-savory">
-      <div id="savory">
+    <section class="food-savory">
+      <div class="savory">
         <div class="card make-it-slow make-it-fast">
           <div class="card-content">
             <div class="title">
@@ -281,11 +281,58 @@
         <p class="circle"><strong class="car-number">9</strong></p>
       </div>
       <div>
-        <i class="fa fa-map-marker size maker" aria-hidden="true" ></i>
+        <i class="fa fa-map-marker size maker" aria-hidden="true"></i>
       </div>
     </div>
   </footer>
 
+  <!-- The Modal -->
+  <div class="modal animated bounceIn modal-overlay " tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true" id="modal-ls">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- https://contributions.taminomartinius.de -->
+<div class="loading" style="opacity: 0;">
+  <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <circle class="loading__center" cx="100" cy="100" r="7" />
+    <rect class="loading__rect" x="65" y="65" width="70" height="70" rx="6" />
+    <path fill="#fff" class="loading__line loading__line--1" d="M100 100c49-26.7 76.7-26.7 86 0 7.6 40-50 75-86 90s-85 16-84-90c.7-70.7 23.3-82.3 68-35l35 35"
+          />
+    <path fill="#fff" class="loading__line loading__line--2" d="M100 100C88 20.7 73-.1 55 25c-27 44-18 178 45 143s83-134 41-148c-28-9.3-41.7 7-41 49.2V119"
+          />
+    <circle class="loading__dot loading__dot--1" cx="119" cy="100" r="7" />
+    <circle class="loading__dot loading__dot--2" cx="100" cy="81" r="7" />
+    <circle class="loading__dot loading__dot--3" cx="100" cy="119" r="7" />
+    <mask id="loading__mask">
+      <rect class="loading__rect loading__rect--masked" transform="rotate(45 100 100)" x="65" y="65" width="70" height="70" rx="6"
+            />
+    </mask>
+    <path class="loading__line loading__line--masked loading__line--1" mask="url(#loading__mask)" d="M100 100c49-26.7 76.7-26.7 86 0 7.6 40-50 75-86 90s-85 16-84-90c.7-70.7 23.3-82.3 68-35l35 35"
+          />
+    <path fill="#fff" class="loading__line loading__line--masked loading__line--2" mask="url(#loading__mask)" d="M100 100C88 20.7 73-.1 55 25c-27 44-18 178 45 143s83-134 41-148c-28-9.3-41.7 7-41 49.2V119"
+          />
+  </svg>
+  <div class="loading__title">
+    Rumos tecnologia
+  </div>
+</div>
+
+
+<!-- dribbble - twitter -->  
+      </div>
+      <!-- content -->
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      Landing.open();
+      setTimeout(() => {
+        Landing.close();
+      }, 10000)
+    });
+  </script>
+  <script src="modal.js"></script>
   <script src="scripts.js"></script>
 </body>
 

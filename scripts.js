@@ -1,8 +1,16 @@
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+// document.addEventListener("DOMContentLoaded", function (event) {
+//   alert("hello world")
+// });
+
+const loadingElement = document.getElementsByClassName('loading')[0]
+
+setTimeout(() => {
+  loadingElement.classList.add('active');
+}, 10)
+
+window.addEventListener('click', () => {
+  loadingElement.classList.remove('loading');
+  setTimeout(() => {
+    loadingElement.classList.add('loading');
+  }, 10)
+})

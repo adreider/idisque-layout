@@ -44,13 +44,13 @@ header {
   max-width: 200px;
 }
 
-#food-savory {
+.food-savory {
   margin-top: -3rem;
   border-bottom: 3px solid #adacac;
   margin-bottom: 100px;
 }
 
-#savory {
+.savory {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 10px;
@@ -173,41 +173,18 @@ footer {
     height: 240px;
   }
 
-  #food-savory {
+  .food-savory {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
 
-  #savory {
+  .savory {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
-  #food-beer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-  
-  #beer{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  #food-pizzas {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-  
-  #pizzas{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
+ 
   header {
     background: var(--orange);
     padding: 15rem 0 10rem;
