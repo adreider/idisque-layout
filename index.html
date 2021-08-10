@@ -4,12 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="modal.css">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/8.9.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
 
-  <title>Document</title>
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="landing.css">
+  <link rel="stylesheet" href="modal-login.css">
+  <title>Idisque</title>
 </head>
 
 <body>
@@ -286,54 +293,121 @@
     </div>
   </footer>
 
-  <!-- The Modal -->
-  <div class="modal animated bounceIn modal-overlay " tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  <!-- The Landing -->
+  <div class="modal animated bounceIn modal-overlay" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true" id="modal-ls">
     <div class="modal-dialog">
       <div class="modal-content">
-        <!-- https://contributions.taminomartinius.de -->
-<div class="loading" style="opacity: 0;">
-  <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-    <circle class="loading__center" cx="100" cy="100" r="7" />
-    <rect class="loading__rect" x="65" y="65" width="70" height="70" rx="6" />
-    <path fill="#fff" class="loading__line loading__line--1" d="M100 100c49-26.7 76.7-26.7 86 0 7.6 40-50 75-86 90s-85 16-84-90c.7-70.7 23.3-82.3 68-35l35 35"
-          />
-    <path fill="#fff" class="loading__line loading__line--2" d="M100 100C88 20.7 73-.1 55 25c-27 44-18 178 45 143s83-134 41-148c-28-9.3-41.7 7-41 49.2V119"
-          />
-    <circle class="loading__dot loading__dot--1" cx="119" cy="100" r="7" />
-    <circle class="loading__dot loading__dot--2" cx="100" cy="81" r="7" />
-    <circle class="loading__dot loading__dot--3" cx="100" cy="119" r="7" />
-    <mask id="loading__mask">
-      <rect class="loading__rect loading__rect--masked" transform="rotate(45 100 100)" x="65" y="65" width="70" height="70" rx="6"
-            />
-    </mask>
-    <path class="loading__line loading__line--masked loading__line--1" mask="url(#loading__mask)" d="M100 100c49-26.7 76.7-26.7 86 0 7.6 40-50 75-86 90s-85 16-84-90c.7-70.7 23.3-82.3 68-35l35 35"
-          />
-    <path fill="#fff" class="loading__line loading__line--masked loading__line--2" mask="url(#loading__mask)" d="M100 100C88 20.7 73-.1 55 25c-27 44-18 178 45 143s83-134 41-148c-28-9.3-41.7 7-41 49.2V119"
-          />
-  </svg>
-  <div class="loading__title">
-    Rumos tecnologia
-  </div>
-</div>
-
-
-<!-- dribbble - twitter -->  
+        <div class="loading" style="opacity: 0;">
+          <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+            <circle class="loading__center" cx="100" cy="100" r="7" />
+            <rect class="loading__rect" x="65" y="65" width="70" height="70" rx="6" />
+            <path class="loading__line loading__line--1"
+              d="M100 100c49-26.7 76.7-26.7 86 0 7.6 40-50 75-86 90s-85 16-84-90c.7-70.7 23.3-82.3 68-35l35 35" />
+            <path class="loading__line loading__line--2"
+              d="M100 100C88 20.7 73-.1 55 25c-27 44-18 178 45 143s83-134 41-148c-28-9.3-41.7 7-41 49.2V119" />
+            <circle class="loading__dot loading__dot--1" cx="119" cy="100" r="7" />
+            <circle class="loading__dot loading__dot--2" cx="100" cy="81" r="7" />
+            <circle class="loading__dot loading__dot--3" cx="100" cy="119" r="7" />
+            <mask id="loading__mask">
+              <rect class="loading__rect loading__rect--masked" transform="rotate(45 100 100)" x="65" y="65" width="70"
+                height="70" rx="6" />
+            </mask>
+            <path class="loading__line loading__line--masked loading__line--1" mask="url(#loading__mask)"
+              d="M100 100c49-26.7 76.7-26.7 86 0 7.6 40-50 75-86 90s-85 16-84-90c.7-70.7 23.3-82.3 68-35l35 35" />
+            <path class="loading__line loading__line--masked loading__line--2" mask="url(#loading__mask)"
+              d="M100 100C88 20.7 73-.1 55 25c-27 44-18 178 45 143s83-134 41-148c-28-9.3-41.7 7-41 49.2V119" />
+          </svg>
+          <div class="loading__title">
+            Rumos tecnologia
+          </div>
+        </div>
+        <!-- dribbble - twitter -->
       </div>
       <!-- content -->
     </div>
   </div>
 
+  <!-- The Login -->
+  <div class="modal-login-overlay" id="modal-login">
+    <div class="modal">
+
+    </div>
+  </div>
+
   <script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-      Landing.open();
-      setTimeout(() => {
-        Landing.close();
-      }, 10000)
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "",
+      authDomain: "idisque-41168.firebaseapp.com",
+      projectId: "idisque-41168",
+      storageBucket: "idisque-41168.appspot.com",
+      messagingSenderId: "199829242801",
+      appId: "1:199829242801:web:b36236cc5b83d0972ef390"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    var provider = new firebase.auth.GoogleAuthProvider();
+    provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+    firebase.auth().languageCode = 'it';
+
+    provider.setCustomParameters({
+      'login_hint': 'user@example.com'
     });
+
+    firebase.auth()
+  .signInWithPopup(provider)
+  .then((result) => {
+    /** @type {firebase.auth.OAuthCredential} */
+    var credential = result.credential;
+
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    var token = credential.accessToken;
+    // The signed-in user info.
+    var user = result.user;
+    // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
+
+    firebase.auth().signInWithRedirect(provider);
+
+    firebase.auth()
+  .getRedirectResult()
+  .then((result) => {
+    if (result.credential) {
+      /** @type {firebase.auth.OAuthCredential} */
+      var credential = result.credential;
+
+      // This gives you a Google Access Token. You can use it to access the Google API.
+      var token = credential.accessToken;
+      // ...
+    }
+    // The signed-in user info.
+    var user = result.user;
+  }).catch((error) => {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
+  });
+
+  });
+
   </script>
-  <script src="modal.js"></script>
-  <script src="scripts.js"></script>
+
+  <script src="landing.js"></script>
 </body>
 
 </html>

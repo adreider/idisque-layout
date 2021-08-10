@@ -10,3 +10,10 @@ const Landing = {
 		document.querySelector('.modal-overlay').classList.remove('active');
 	},
 };
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  Landing.open();
+  setTimeout(() => {
+    Landing.close();
+  }, 10000)
+});
