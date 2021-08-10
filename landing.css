@@ -33,3 +33,10 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.empresa-name {
+  text-align: center;
+  font-size: smaller;
+  font-family: inherit;
+  padding-top: 39px;
+}
