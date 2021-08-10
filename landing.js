@@ -15,5 +15,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
   Landing.open();
   setTimeout(() => {
     Landing.close();
-  }, 10000)
+  }, 0)
 });
