@@ -7,12 +7,6 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="/__/firebase/8.9.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
-
-  <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="landing.css">
   <link rel="stylesheet" href="modal-login.css">
@@ -297,7 +291,7 @@
   <div class="modal animated bounceIn modal-overlay" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true" id="modal-ls">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <!-- <div class="modal-content">
         <div class="loading" style="opacity: 0;">
           <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
             <circle class="loading__center" cx="100" cy="100" r="7" />
@@ -322,90 +316,18 @@
             Rumos tecnologia
           </div>
         </div>
-        <!-- dribbble - twitter -->
-      </div>
+        <!- dribbble - twitter -->
+      </div> -->
       <!-- content -->
     </div>
   </div>
 
   <!-- The Login -->
-  <div class="modal-login-overlay" id="modal-login">
+  <!-- <div class="modal-login-overlay active" id="modal-login">
     <div class="modal">
 
     </div>
-  </div>
-
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "",
-      authDomain: "idisque-41168.firebaseapp.com",
-      projectId: "idisque-41168",
-      storageBucket: "idisque-41168.appspot.com",
-      messagingSenderId: "199829242801",
-      appId: "1:199829242801:web:b36236cc5b83d0972ef390"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-
-    var provider = new firebase.auth.GoogleAuthProvider();
-    provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
-    firebase.auth().languageCode = 'it';
-
-    provider.setCustomParameters({
-      'login_hint': 'user@example.com'
-    });
-
-    firebase.auth()
-  .signInWithPopup(provider)
-  .then((result) => {
-    /** @type {firebase.auth.OAuthCredential} */
-    var credential = result.credential;
-
-    // This gives you a Google Access Token. You can use it to access the Google API.
-    var token = credential.accessToken;
-    // The signed-in user info.
-    var user = result.user;
-    // ...
-  }).catch((error) => {
-    // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    // The email of the user's account used.
-    var email = error.email;
-    // The firebase.auth.AuthCredential type that was used.
-    var credential = error.credential;
-    // ...
-
-    firebase.auth().signInWithRedirect(provider);
-
-    firebase.auth()
-  .getRedirectResult()
-  .then((result) => {
-    if (result.credential) {
-      /** @type {firebase.auth.OAuthCredential} */
-      var credential = result.credential;
-
-      // This gives you a Google Access Token. You can use it to access the Google API.
-      var token = credential.accessToken;
-      // ...
-    }
-    // The signed-in user info.
-    var user = result.user;
-  }).catch((error) => {
-    // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    // The email of the user's account used.
-    var email = error.email;
-    // The firebase.auth.AuthCredential type that was used.
-    var credential = error.credential;
-    // ...
-  });
-
-  });
-
-  </script>
+  </div> -->
 
   <script src="landing.js"></script>
 </body>
