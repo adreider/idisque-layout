@@ -26,8 +26,10 @@
 
 .logo-name {
   text-align: center;
-  font-size: 27px;
+  font-size: 30px;
   font-weight: bold;
   font-family: inherit;
-  color: #ff922d;
+  background: -webkit-linear-gradient(#cebd00, #f7ad00, #e010bc, #2755ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
