@@ -11,12 +11,13 @@
   <link rel="stylesheet" href="css/landing.css">
   <link rel="stylesheet" href="css/modal-login.css">
   <link rel="stylesheet" href="css/modal-maps.css">
+  <link rel="stylesheet" href="css/modal-products.css">
   <title>Idisque</title>
 </head>
 
 <body>
   <header>
-    <img class="logo" src="https://img.elo7.com.br/product/original/3A9F8F6/quadro-logomarca-logomarca.jpg">
+    <img class="logo" id="logo" alt=""src="https://img.elo7.com.br/product/original/3A9F8F6/quadro-logomarca-logomarca.jpg">
     <div class="info">
       <h2 class="name-logo">xiquinho salgados</h2>
       <button class="flex button button1">
@@ -24,7 +25,7 @@
         <i class="fa fa-clock-o left-timer" aria-hidden="true"></i>
       </button>
       <a href="#" onclick="Login.open()" class="button new">teste </a>
-
+      <a href="#" onclick="Products.open()" class="button new">teste </a>
     </div>
   </header>
   <nav>
@@ -43,14 +44,18 @@
 
   <main class="container">
     <section class="food-savory">
-      <div class="savory">
+      <div class="savory" onclick="Products.open()">
         <div class="card make-it-slow make-it-fast">
           <div class="card-content">
             <div class="title">
               <span>lache(batata)</span>
               <strong class="price">$4.50</strong>
             </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.34.jpeg" alt="lanche fake">
+            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.52.jpeg" style=" width: 150px;
+            height: 100px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;" alt="lanche fake">
           </div>
         </div>
         <div class="card make-it-slow make-it-fast">
@@ -59,7 +64,11 @@
               <span>lache(batata)</span>
               <strong class="price">$4.50</strong>
             </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.52.jpeg" alt="lanche fake">
+            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.52.jpeg" style=" width: 150px;
+            height: 100px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;" alt="lanche fake">
           </div>
         </div>
         <div class="card make-it-slow make-it-fast">
@@ -68,7 +77,11 @@
               <span>lache(batata)</span>
               <strong class="price">$4.50</strong>
             </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.52.jpeg" alt="lanche fake">
+            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.52.jpeg" style=" width: 150px;
+            height: 100px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;" alt="lanche fake">
           </div>
         </div>
         <div class="card make-it-slow make-it-fast">
@@ -77,209 +90,26 @@
               <span>lache(batata)</span>
               <strong class="price">$4.50</strong>
             </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.34.jpeg" alt="lanche fake">
-          </div>
-        </div>
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.34.jpeg" alt="lanche fake">
-          </div>
-        </div>
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.34.jpeg" alt="lanche fake">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="food-savory">
-      <div class="savory">
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.34.jpeg" alt="lanche fake">
-          </div>
-        </div>
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.52.jpeg" alt="lanche fake">
-          </div>
-        </div>
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.52.jpeg" alt="lanche fake">
-          </div>
-        </div>
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.34.jpeg" alt="lanche fake">
-          </div>
-        </div>
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.34.jpeg" alt="lanche fake">
-          </div>
-        </div>
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.34.jpeg" alt="lanche fake">
+            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.52.jpeg" style=" width: 150px;
+            height: 100px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;" alt="lanche fake">
           </div>
         </div>
       </div>
     </section>
-    <section class="food-savory">
-      <div class="savory">
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.34.jpeg" alt="lanche fake">
-          </div>
-        </div>
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.52.jpeg" alt="lanche fake">
-          </div>
-        </div>
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.52.jpeg" alt="lanche fake">
-          </div>
-        </div>
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.34.jpeg" alt="lanche fake">
-          </div>
-        </div>
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.34.jpeg" alt="lanche fake">
-          </div>
-        </div>
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.34.jpeg" alt="lanche fake">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="food-savory">
-      <div class="savory">
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.34.jpeg" alt="lanche fake">
-          </div>
-        </div>
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.52.jpeg" alt="lanche fake">
-          </div>
-        </div>
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.52.jpeg" alt="lanche fake">
-          </div>
-        </div>
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.34.jpeg" alt="lanche fake">
-          </div>
-        </div>
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.34.jpeg" alt="lanche fake">
-          </div>
-        </div>
-        <div class="card make-it-slow make-it-fast">
-          <div class="card-content">
-            <div class="title">
-              <span>lache(batata)</span>
-              <strong class="price">$4.50</strong>
-            </div>
-            <img src="assets/WhatsApp Image 2021-08-05 at 17.13.34.jpeg" alt="lanche fake">
-          </div>
-        </div>
-      </div>
-    </section>
+    
+   
+    
   </main>
 
   <footer>
     <div class="foot-car">
       <div>
-        <i class="fa fa-home home" aria-hidden="true"></i>
+        <a href="#logo" class="pointer">
+          <i class="fa fa-home home" aria-hidden="true"></i>
+        </a>
       </div>
       <div>
         <i class="fa fa-cart-plus size car" aria-hidden="true"></i>
@@ -293,7 +123,7 @@
     </div>
   </footer>
 
-  <!-- the landing -->
+  <!-- the modal landing -->
   <div class="modal-overlay active" id="modal-ls">
     <div class="modal">
       <img src="https://cdn.dribbble.com/users/645440/screenshots/3266490/loader-2_food.gif" alt="">
@@ -302,7 +132,7 @@
     </div>
   </div>
 
-  <!-- the login -->
+  <!-- the modal login -->
   <div class="modal-login" id="login-ls">
     <div class="login">
       <div class="login-wrap">
@@ -347,7 +177,7 @@
     </div>
   </div>
 
-  <!-- the maps -->
+  <!-- the modal maps -->
   <div class="modal-maps" id="maps">
     <div class="login">
       <div class="maps-wrap">
@@ -364,7 +194,7 @@
               </div>
               <div class="hr"></div>
               <div class="foot-lnk">
-                <a href="#forgot" onclick="Maps.close()">sair</a>
+                <a href="#forgot" class="text-close"onclick="Maps.close()">sair</a>
               </div>
             </div>
             <div class="sign-up-htm">
@@ -379,9 +209,18 @@
     </div>
   </div>
 
+  <!-- the modal products -->
+  <div class="modal-products" id="products">
+    <div class="login">
+      
+    </div>
+  </div>
+
+
   <script src="scripts/landing.js"></script>
   <script src="scripts/modal-login.js"></script>
   <script src="scripts/modal-maps.js"></script>
+  <script src="scripts/modal-products.js"></script>
 </body>
 
 </html>

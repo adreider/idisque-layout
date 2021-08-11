@@ -1,5 +1,5 @@
 /* ====== Modal ====== */
-.modal-maps {
+.modal-products {
   z-index: 9999999999;
   width: 100%;
   height: 100%;
@@ -15,7 +15,7 @@
   opacity: 0;
   visibility: hidden;
 }
-.modal-maps.active {
+.modal-products.active {
   opacity: 1;
   visibility: visible;
 }
