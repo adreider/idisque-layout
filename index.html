@@ -7,9 +7,10 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="landing.css">
-  <link rel="stylesheet" href="modal-login.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="css/modal-login.css">
+  <link rel="stylesheet" href="css/modal-maps.css">
   <title>Idisque</title>
 </head>
 
@@ -285,7 +286,9 @@
         <p class="circle"><strong class="car-number">9</strong></p>
       </div>
       <div>
-        <i class="fa fa-map-marker size maker" aria-hidden="true"></i>
+        <a onclick="Maps.open()">
+          <i class="fa fa-map-marker size maker" aria-hidden="true"></i>
+        </a>
       </div>
     </div>
   </footer>
@@ -344,8 +347,41 @@
     </div>
   </div>
 
-  <script src="landing.js"></script>
-  <script src="modal-login.js"></script>
+  <!-- the maps -->
+  <div class="modal-maps" id="maps">
+    <div class="login">
+      <div class="maps-wrap">
+        <div class="login-html">
+          <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="label-text">Calcule a taxa de entrega</label>
+          <div class="login-form">
+            <div class="sign-in-htm">
+              <div class="group">
+                <label for="endereco" class="label">Endereço de entrega</label>
+                <input id="user" type="text" class="input">
+              </div>
+              <div class="group">
+                <input type="submit" class="button" value="Sign In">
+              </div>
+              <div class="hr"></div>
+              <div class="foot-lnk">
+                <a href="#forgot" onclick="Maps.close()">sair</a>
+              </div>
+            </div>
+            <div class="sign-up-htm">
+
+              <div class="foot-lnk">
+                <a href="#forgot" onclick="Maps.close()">sair</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/landing.js"></script>
+  <script src="scripts/modal-login.js"></script>
+  <script src="scripts/modal-maps.js"></script>
 </body>
 
 </html>
