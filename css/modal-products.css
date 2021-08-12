@@ -67,3 +67,7 @@ textarea {
 .buttons {
   display: flex;
 }
+
+.description {
+  padding:20px;
+}
