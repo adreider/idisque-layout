@@ -19,52 +19,51 @@
   opacity: 1;
   visibility: visible;
 }
-
-.maps-wrap {
-  width: 100%;
-  margin: auto;
-  max-width: 525px;
-  min-height: 500px;
-  position: relative;
-  background: url(https://motoboy.app/wp-content/uploads/2021/04/motoboy_app-1.gif)
-    no-repeat center;
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 40px;
+.checked {
+  color: orange;
 }
 
-.label-text {
-  color: #fff;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 500;
+.flr {
+  float: right;
+}
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-image: linear-gradient(to right, rgb(205 231 38 / 12%), #f5b800);
+  border-radius: 0.3rem;
+}
+
+
+.content-product {
+  background-color: #fff;
   display: flex;
-  border-color: #1161ee;
-  flex-direction: column;
+  border-radius: 35px 35px 10px 10px;
 }
 
-.text-close {
-  font-size: 20px;
-  font-weight: 500;
+.content-info {
+  padding: 20px;
 }
 
-.up-maps {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  backface-visibility: hidden;
-  transition: all 0.4s linear;
+.img-fluid {
+  max-width: 100%;
+  border-radius: 35px 35px 0px 0px;
 }
 
-.login-form .group .text-size {
-  font-size: 17px;
-}
-
-.opacity-input {
-  border: none;
-  padding: 15px 20px;
-  border-radius: 25px;
-  background: rgb(0 0 0 / 28%);
+textarea {
   width: 100%;
+  border: 0;
+  padding: 16px;
+  border-radius: 8px;
+  background: #e7e5e5;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 4%);
+  resize: vertical;
+  min-height: 100px;
+}
+
+.result {
+  padding: 7px;
+}
+
+.buttons {
+  display: flex;
 }
