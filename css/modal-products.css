@@ -41,7 +41,9 @@
 }
 
 .content-info {
-  padding: 20px;
+  display: flex;
+  align-content: stretch;
+  justify-content: space-evenly;
 }
 
 .img-fluid {
@@ -61,7 +63,11 @@ textarea {
 }
 
 .result {
-  padding: 7px;
+  padding-left: 20px;
+}
+#result {
+  text-align: center;
+  padding-right: 20px;
 }
 
 .buttons {
@@ -70,4 +76,28 @@ textarea {
 
 .description {
   padding:20px;
+}
+
+.content-button {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-around;
+}
+
+.add-button {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-evenly;
+  width: 100%;
+  text-align: center;
+  padding: 14px;
+  border: none;
+  color: white;
+  background: #218640;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.add-button:hover {
+  transition: all 0.6s;
+  background: rgb(115, 235, 91);
 }
