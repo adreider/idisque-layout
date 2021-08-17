@@ -11,9 +11,9 @@ const Landing = {
 	},
 };
 
-document.addEventListener("DOMContentLoaded", function (event) {
-  Landing.open();
-  setTimeout(() => {
-    Landing.close();
-  }, 5000)
-});
+// document.addEventListener("DOMContentLoaded", function (event) {
+//   Landing.open();
+//   setTimeout(() => {
+//     Landing.close();
+//   }, 5000)
+// });

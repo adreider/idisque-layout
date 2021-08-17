@@ -1,0 +1,229 @@
+/* ====== Modal ====== */
+.modal-payment {
+  z-index: 9999999999;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(0, 0, 0, 0.7);
+
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+.modal-payment.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.content-payment {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  height: 100%;
+}
+
+.content-block {
+  display: block;
+  padding: 20px;
+}
+
+.top {
+  margin-top: 9px;
+}
+
+.collapse {
+  --sp-sm: 1.8rem;
+  --sp-md: 2.4rem;
+  width: 100%;
+  max-width: 72rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #f29e23;
+  box-shadow: 0.1rem 0.1rem 0.3rem rgb(0 0 0 / 25%);
+  background-color: #ffffff;
+  transition: box-shadow 250ms;
+  will-change: box-shadow;
+  overflow: hidden;
+}
+.collapse:hover {
+  box-shadow: 0.1rem 0.1rem 1.8rem rgba(0, 0, 0, 0.25);
+}
+.collapse .title {
+  display: flex;
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 700;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: #f29e23;
+}
+.collapse .title::after {
+  content: "→";
+  position: absolute;
+  right: var(--sp-md);
+  top: 50%;
+  transition: all 4s;
+  transform: translateY(-50%);
+}
+.collapse[open] .title::after {
+  content: "↓";
+}
+.collapse .divider {
+  margin: 0 var(--sp-md);
+  border-radius: 99em;
+  border: 0.1rem solid currentColor;
+  background: currentColor;
+  color: #e1e1e1;
+}
+.collapse .description {
+  margin: 0;
+  font-size: 1.4rem;
+}
+.collapse .description:not(:first-of-type) {
+  padding-top: 0;
+}
+
+
+page-header {
+  background: #ff922d;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.page-header.inner {
+  padding: 20px;
+  background: #f29e23;
+}
+
+.page-header.inner .container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.page-header.inner h1 {
+  margin: 0 auto;
+  color: #fff;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1.625rem;
+}
+
+form {
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+/* form input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  border: 1px solid rgb(242 158 35);
+  background-color: rgb(15 12 12 / 20%);
+  width: 250px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  transition-duration: 0.25s;
+  font-weight: 300;
+} */
+.form-react {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 40px;
+}
+
+.check-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.checkbox {
+  display: flex;
+  grid-template-columns: -webkit-min-content auto;
+  font-size: 2rem;
+  color:#f29e23;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.checkbox--disabled {
+  color: var(--disabled);
+}
+
+.checkbox__control {
+  display: inline-grid;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 0.25em;
+  border: 0.1em solid currentColor;
+}
+.checkbox__control svg {
+  transition: transform 0.1s ease-in 25ms;
+  transform: scale(0);
+  transform-origin: bottom left;
+}
+
+.checkbox__input {
+  display: grid;
+  grid-template-areas: "checkbox";
+}
+.checkbox__input > * {
+  grid-area: checkbox;
+}
+.checkbox__input input {
+  opacity: 0;
+  width: 1em;
+  height: 1em;
+}
+.checkbox__input input:focus + .checkbox__control {
+  box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.1em currentColor;
+}
+.checkbox__input input:checked + .checkbox__control svg {
+  transform: scale(1);
+}
+.checkbox__input input:disabled + .checkbox__control {
+  color: var(--disabled);
+}
+
+.container-clipboard {
+  border: 3px solid #f29e23;
+  padding: 5px;
+  border-radius: 0.25em;
+  display: flex;
+}
+
+.container-clipboard:hover {
+  border: 3px solid #32bcad;
+  transition: all 0.3s ease;
+}
+
+.radio-label{
+  font-size: smaller;
+}
+
+@media only screen and (min-width: 768px) {
+  .fa {
+    position: absolute;
+    top: 140px;
+    left: 42px;
+  }
+}
